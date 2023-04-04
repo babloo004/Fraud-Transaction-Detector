@@ -57,3 +57,5 @@ for i in range(0,4):
     l.append(float(input(f'Enter {d[i]} : ')))
 features = np.array([l])
 print(model.predict(features))
+print("Model is having a score of ")
+print(model.score(xtest, ytest))
